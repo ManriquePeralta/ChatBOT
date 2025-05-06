@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Chatbot Web</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="chat-container">
+    <h1>🤖 Unibot</h1>
+
+    <p><strong>Modo actual:</strong> {{ modo_actual }}</p>
+
+    {% if respuesta %}
+      <div class="respuesta"><strong>Bot:</strong> {{ respuesta }}</div>
+    {% endif %}
+
+    {% if mostrar_confirmacion %}
+      <form method="post">
+        <button type="submit" name="confirmacion" value="si">Sí</button>
+        <button type="submit" name="confirmacion" value="no">No</button>
+      </form>
+    {% endif %}
+
+    {% if mostrar_formulario %}
+      <form method="post">
+        <input type="hidden" name="pregunta_faltante" value="{{ ultima_pregunta }}">
+        <input type="text" name="nueva_respuesta" placeholder="Ingresá la respuesta..." required>
+        <button type="submit">Guardar respuesta</button>
+      </form>
+    {% endif %}
+  </div>
+
+  <div class="input-container">
+    <form method="post">
+      <input type="text" name="pregunta" placeholder="Escribí algo..." required>
+      <button type="submit">Enviar</button>
+    </form>
+
+    <form method="post" class="modo-form">
+      <button type="submit" name="modo" value="charla">Modo Charla</button>
+      <button type="submit" name="modo" value="pregunta">Modo Preguntar</button>
+    </form>
+  </div>
+
+  <script>
+    window.scrollTo(0, document.body.scrollHeight);
+  </script>
+</body>
+</html>
