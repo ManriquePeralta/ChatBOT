@@ -102,31 +102,416 @@ respuestas_conversacion = {
 
 respuestas_por_tema = {
     "estudio": {
-        "keywords": ["estudiar", "parcial", "examen", "facultad", "colegio", "tarea", "clase", "trabajo práctico", "universidad", "cansado", "cansancio"],
-        "respuestas": [
-            "¡Ánimo con el estudio! 💪",
-            "¡Vos podés con ese parcial!",
-            "La facultad a veces agota, ¡pero vale la pena!",
+        "keywords": [
+            "estudiar",
+            "parcial",
+            "examen",
+            "facultad",
+            "colegio",
+            "tarea",
+            "clase",
+            "trabajo practico",
+            "universidad",
+            "cansado",
+            "cansancio"
         ],
+        "respuestas": [
+            "¡Animo con el estudio! 💪",
+            "¡Vos podes con ese parcial!",
+            "La facultad a veces agota, ¡pero vale la pena!"
+        ]
     },
     "tecnologia": {
-        "keywords": ["computadora", "programar", "código", "python", "flask", "html", "javascript"],
-        "respuestas": [
-            "¡La tecnología es fascinante! ¿Qué estás programando?",
-            "¡Eso suena muy techie! 💻",
-            "¿Querés que hablemos de código? Estoy listo 😎",
+        "keywords": [
+            "computadora",
+            "programar",
+            "codigo",
+            "python",
+            "flask",
+            "html",
+            "javascript"
         ],
+        "respuestas": [
+            "¡La tecnologia es fascinante! ¿Que estas programando?",
+            "¡Eso suena muy techie! 💻",
+            "¿Queres que hablemos de codigo? Estoy listo 😎"
+        ]
     },
     "musica": {
-        "keywords": ["música", "canción", "cantar", "banda", "melodía", "artista"],
-        "respuestas": [
-            "🎵 ¿Qué música te gusta?",
-            "¡La música alegra el alma!",
-            "¿Tenés una canción favorita?",
+        "keywords": [
+            "musica",
+            "cancion",
+            "cantar",
+            "banda",
+            "melodia",
+            "artista"
         ],
+        "respuestas": [
+            "🎵 ¿Que musica te gusta?",
+            "¡La musica alegra el alma!",
+            "¿Tenes una cancion favorita?"
+        ]
     },
-    # (Agregá hasta 30 temas siguiendo este patrón)
+    "naturaleza": {
+        "keywords": [
+            "arbol",
+            "bosque",
+            "montana",
+            "naturaleza",
+            "rio",
+            "paisaje"
+        ],
+        "respuestas": [
+            "🌳 ¿Te gusta caminar por la naturaleza?",
+            "Los paisajes naturales son hermosos.",
+            "¿Cual es tu lugar natural favorito?",
+            "Nada como el sonido de un rio en el bosque.",
+            "Las montanas siempre impresionan."
+        ]
+    },
+    "autoayuda": {
+        "keywords": [
+            "motivacion",
+            "esfuerzo",
+            "logro",
+            "objetivo",
+            "superarse",
+            "crecimiento"
+        ],
+        "respuestas": [
+            "¡Nunca dejes de mejorar!",
+            "Paso a paso se llega lejos.",
+            "Vos podes lograrlo.",
+            "Creer en uno mismo es clave.",
+            "Cada dia es una oportunidad nueva."
+        ]
+    },
+    "fiestas": {
+        "keywords": [
+            "fiesta",
+            "cumpleanos",
+            "celebrar",
+            "musica",
+            "baile",
+            "diversion"
+        ],
+        "respuestas": [
+            "¡Que empiece la fiesta!",
+            "¿Fuiste a alguna fiesta ultimamente?",
+            "Los cumpleanos son especiales.",
+            "Nada como bailar con amigos.",
+            "¡A celebrar la vida!"
+        ]
+    },
+    "amor": {
+        "keywords": [
+            "amor",
+            "pareja",
+            "sentimientos",
+            "romance",
+            "corazon",
+            "noviazgo"
+        ],
+        "respuestas": [
+            "El amor mueve el mundo.",
+            "¿Estas enamorado?",
+            "El corazon sabe lo que quiere.",
+            "Las historias de amor son unicas.",
+            "Amar tambien es cuidarse."
+        ]
+    },
+    "series": {
+        "keywords": [
+            "serie",
+            "capitulo",
+            "television",
+            "maraton",
+            "temporada",
+            "streaming"
+        ],
+        "respuestas": [
+            "¿Viste alguna serie buena?",
+            "No puedo dejar de ver esta serie.",
+            "Maraton de series, plan perfecto.",
+            "¡Esa temporada fue epica!",
+            "Amo descubrir nuevas historias."
+        ]
+    },
+    "internet": {
+        "keywords": [
+            "internet",
+            "redes",
+            "conexion",
+            "online",
+            "wifi",
+            "navegar"
+        ],
+        "respuestas": [
+            "¿Cuanto tiempo pasas online?",
+            "Internet nos conecta a todos.",
+            "¡No tengo senal!",
+            "Las redes pueden ser adictivas.",
+            "Conectarse es parte del dia a dia."
+        ]
+    },
+    "auto": {
+        "keywords": [
+            "auto",
+            "manejar",
+            "vehiculo",
+            "ruta",
+            "conducir",
+            "viaje"
+        ],
+        "respuestas": [
+            "¿Te gusta manejar?",
+            "Un viaje en auto despeja la mente.",
+            "Cuidado en la ruta.",
+            "¿Tenes auto propio?",
+            "Conducir de noche tiene su magia."
+        ]
+    },
+    "belleza": {
+        "keywords": [
+            "belleza",
+            "maquillaje",
+            "cuidado",
+            "piel",
+            "estetica",
+            "rostro"
+        ],
+        "respuestas": [
+            "La belleza esta en los detalles.",
+            "¿Tenes una rutina de cuidado facial?",
+            "Maquillarse puede ser divertido.",
+            "Cuidar la piel es importante.",
+            "¡Tu brillo es natural!"
+        ]
+    },
+    "historia": {
+        "keywords": [
+            "historia",
+            "pasado",
+            "evento",
+            "civilizacion",
+            "epoca",
+            "personaje"
+        ],
+        "respuestas": [
+            "¿Te gusta la historia?",
+            "Aprender del pasado nos ayuda hoy.",
+            "La historia esta llena de lecciones.",
+            "Cada epoca tiene su encanto.",
+            "Los personajes historicos inspiran."
+        ]
+    },
+    "politica": {
+        "keywords": [
+            "politica",
+            "gobierno",
+            "ley",
+            "partido",
+            "presidente",
+            "eleccion"
+        ],
+        "respuestas": [
+            "La politica genera muchas opiniones.",
+            "¿Seguis la actualidad politica?",
+            "Cada eleccion cuenta.",
+            "Hablar de politica a veces divide.",
+            "El debate es parte de la democracia."
+        ]
+    },
+    "economia": {
+        "keywords": [
+            "economia",
+            "dinero",
+            "precios",
+            "inflacion",
+            "gasto",
+            "ahorro"
+        ],
+        "respuestas": [
+            "¿Como esta tu economia personal?",
+            "Ahorrar no siempre es facil.",
+            "La inflacion cambia todo.",
+            "El dinero va y viene.",
+            "Planificar ayuda mucho."
+        ]
+    },
+    "noticias": {
+        "keywords": [
+            "noticia",
+            "actualidad",
+            "diario",
+            "television",
+            "periodico",
+            "evento"
+        ],
+        "respuestas": [
+            "¿Leiste las noticias hoy?",
+            "El mundo se mueve rapido.",
+            "Informarse es clave.",
+            "A veces es mejor desconectarse un poco.",
+            "Cada dia pasa algo nuevo."
+        ]
+    },
+    "filosofia": {
+        "keywords": [
+            "filosofia",
+            "pensar",
+            "vida",
+            "existencia",
+            "sabiduria",
+            "reflexion"
+        ],
+        "respuestas": [
+            "¿Te gusta reflexionar sobre la vida?",
+            "La filosofia abre la mente.",
+            "Pensar tambien es un arte.",
+            "Las grandes preguntas no siempre tienen respuesta.",
+            "La sabiduria viene con el tiempo."
+        ]
+    },
+    "relaciones": {
+        "keywords": [
+            "relacion",
+            "pareja",
+            "amistad",
+            "vinculo",
+            "comunicacion",
+            "afecto"
+        ],
+        "respuestas": [
+            "Las relaciones se construyen con tiempo.",
+            "Hablar es fundamental.",
+            "El afecto es la base de todo.",
+            "¿Como estan tus vinculos hoy?",
+            "Cuidar la relacion es un acto diario."
+        ]
+    },
+    "creatividad": {
+        "keywords": [
+            "creatividad",
+            "idea",
+            "crear",
+            "imaginacion",
+            "inspiracion",
+            "innovar"
+        ],
+        "respuestas": [
+            "¿Tuviste una idea nueva hoy?",
+            "Crear te hace libre.",
+            "La inspiracion puede aparecer en cualquier momento.",
+            "Imaginacion al poder.",
+            "Innovar es cambiar el mundo."
+        ]
+    },
+    "negocios": {
+        "keywords": [
+            "negocio",
+            "empresa",
+            "emprender",
+            "cliente",
+            "ventas",
+            "trabajo"
+        ],
+        "respuestas": [
+            "¿Tenes un emprendimiento?",
+            "Los negocios requieren pasion y esfuerzo.",
+            "El cliente siempre es importante.",
+            "Vender es todo un arte.",
+            "Emprender es un camino desafiante."
+        ]
+    },
+    "hogar": {
+        "keywords": [
+            "hogar",
+            "casa",
+            "departamento",
+            "vivir",
+            "familia",
+            "espacio"
+        ],
+        "respuestas": [
+            "Tu hogar refleja quien sos.",
+            "Nada como llegar a casa.",
+            "¿Como decoraste tu espacio?",
+            "El hogar es refugio.",
+            "Cada rincon tiene su historia."
+        ]
+    },
+    "meditacion": {
+        "keywords": [
+            "meditacion",
+            "relajacion",
+            "calma",
+            "respirar",
+            "mindfulness",
+            "paz"
+        ],
+        "respuestas": [
+            "¿Probaste meditar alguna vez?",
+            "Respirar profundo ayuda mucho.",
+            "La calma se cultiva.",
+            "Cinco minutos de silencio pueden cambiar el dia.",
+            "Meditar no es vaciarse, es observar."
+        ]
+    },
+    "finanzas": {
+        "keywords": [
+            "finanza",
+            "dinero",
+            "ahorro",
+            "presupuesto",
+            "gastos",
+            "inversion"
+        ],
+        "respuestas": [
+            "¿Llevas control de tus gastos?",
+            "Invertir requiere conocimiento.",
+            "El presupuesto es tu mapa financiero.",
+            "Ahorrar a largo plazo rinde frutos.",
+            "Cuidar tus finanzas es autocuidado."
+        ]
+    },
+    "salidas": {
+        "keywords": [
+            "salida",
+            "plan",
+            "bar",
+            "restaurante",
+            "noche",
+            "amigos"
+        ],
+        "respuestas": [
+            "¿Tenes planes para el finde?",
+            "Salir despeja la cabeza.",
+            "Un bar con amigos es lo mejor.",
+            "¿Preferis noche tranquila o movida?",
+            "Planificar salidas es parte de la diversion."
+        ]
+    },
+    "recuerdos": {
+        "keywords": [
+            "recuerdo",
+            "pasado",
+            "memoria",
+            "nostalgia",
+            "infancia",
+            "foto"
+        ],
+        "respuestas": [
+            "¿Recordas algun momento especial?",
+            "Las fotos guardan recuerdos preciosos.",
+            "La infancia siempre deja huella.",
+            "A veces la nostalgia pega fuerte.",
+            "Volver a un lugar querido emociona."
+        ]
+    }
 }
+    # (Agregá hasta 30 temas siguiendo este patrón)
+
 
 # ----------------------------
 # Cargar y guardar preguntas
