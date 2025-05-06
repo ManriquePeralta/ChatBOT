@@ -29,7 +29,7 @@ body {
   .input-container {
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 99%;
     background: #ffffff;
     border-top: 1px solid #ccc;
     padding: 10px 20px;
